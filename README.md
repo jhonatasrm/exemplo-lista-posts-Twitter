@@ -10,6 +10,7 @@ Android 5.0 Lollipop (API Level 21)
 * Utilização de ImageButton para interagir com item clicado no post
 * Icones de acordo com tamanho do dispositivo
 
+<img src="screenshot1.jpg" alt="screenshot" width="200" height="400"/>     <img src="screenshot2.jpg" alt="screenshot" width="200" height="400"/>     <img src="screenshot3.jpg" alt="screenshot" width="200" height="400"/>
 
 ### Licença
 Este repositório está disponível sob a licença [Mozilla Public License, version 2.0](https://github.com/jhonatasrm/exemplo-lista-posts-Twitter/blob/master/LICENSE)
