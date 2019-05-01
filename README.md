@@ -1,5 +1,5 @@
 # Exemplo lista posts Twitter
-Exemplo de como construir um layout parecido com o do Twitter adicionando elementos ao mesmo.
+Exemplo de como construir um layout parecido com o do Twitter adicionando elementos a lista.
 
 ## Android Versão Mínima
 Android 5.0 Lollipop (API Level 21)
