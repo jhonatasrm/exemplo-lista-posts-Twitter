@@ -9,6 +9,7 @@ Android 5.0 Lollipop (API Level 21)
 * Uso de ConstraintLayout para criação do layout de cada postagem
 * Utilização de ImageButton para interagir com item clicado no post
 * Icones de acordo com tamanho do dispositivo
+* Uso do RelativeLayout para orientar os elementos da tela principal
 
 <img src="screenshot1.jpg" alt="screenshot" width="200" height="400"/>     <img src="screenshot2.jpg" alt="screenshot" width="200" height="400"/>     <img src="screenshot3.jpg" alt="screenshot" width="200" height="400"/>
 
