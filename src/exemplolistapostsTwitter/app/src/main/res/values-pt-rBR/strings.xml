@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exemplo lista posts Twitter</string>
+    <string name="title_comment_page">Página Inicial</string>
+    <string name="more_options">Mais Opções</string>
+    <string name="comment">Comentários</string>
+    <string name="local">Já está na Página Inicial</string>
+    <string name="search">Clicado no botão de Pesquisa</string>
+    <string name="notifications">Clicado no botão de Notificações</string>
+    <string name="dm">Clicado no botão DM</string>
+    <string name="share">Compartilhar Tweet</string>
+    <string name="timeline">Mudar timeline</string>
+</resources>
