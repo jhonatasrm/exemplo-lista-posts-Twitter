@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Exemplo lista posts Twitter</string>
+    <string name="title_comment_page">Home</string>
+    <string name="more_options">More Options</string>
+    <string name="comment">Comments</string>
+    <string name="local">Already in home</string>
+    <string name="search">Clicked on button Search</string>
+    <string name="notifications">Clicked on button Notifications</string>
+    <string name="dm">Clicked on button DM</string>
+    <string name="share">Share Tweet</string>
+    <string name="timeline">Change timeline</string>
+</resources>
