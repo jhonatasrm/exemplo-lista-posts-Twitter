@@ -1,5 +1,5 @@
 # Exemplo lista posts Twitter
-Exemplo de como construir um layout parecido com o do Twitter adicionando elementos a lista.
+Exemplo de como construir um layout de posts parecido com o do Twitter adicionando elementos a lista.
 
 ## Android Versão Mínima
 Android 5.0 Lollipop (API Level 21)
@@ -9,7 +9,8 @@ Android 5.0 Lollipop (API Level 21)
 * Uso de ConstraintLayout para criação do layout de cada postagem
 * Utilização de ImageButton para interagir com item clicado no post
 * Icones de acordo com tamanho do dispositivo
-* Uso do RelativeLayout para orientar os elementos da tela principal
+* Uso do RelativeLayout para orientar os elementos da lista
+* Utilização da biblioteca <a href="https://github.com/hdodenhof/CircleImageView">de.hdodenhof:circleimageview:3.0.0</a> para obter imagens de perfil em forma circular
 
 <img src="screenshot1.jpg" alt="screenshot" width="200" height="400"/>     <img src="screenshot2.jpg" alt="screenshot" width="200" height="400"/>     <img src="screenshot3.jpg" alt="screenshot" width="200" height="400"/>
 
