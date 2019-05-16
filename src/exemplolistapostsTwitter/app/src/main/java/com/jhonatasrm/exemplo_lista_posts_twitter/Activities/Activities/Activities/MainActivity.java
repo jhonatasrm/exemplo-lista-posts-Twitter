@@ -22,48 +22,56 @@ public class MainActivity extends AppCompatActivity {
     private ListView list;
     private ImageButton home, search, notifications, dm, timeLine;
 
+    // método onCreate que chama o layout da activity e o método que inicializa as opções da mesma
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         init();
     }
 
+    // método que inicializa as opções da activity
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void init() {
         list = findViewById(R.id.list);
+        // atribuído a List o método que retorna a lista criada
         List<Comments> comments = initComments();
         CommetsAdapter commetsAdapter = new CommetsAdapter(comments, this);
         list.setAdapter(commetsAdapter);
         list.setNestedScrollingEnabled(true);
 
+        // inicializa os findViewById
         home = findViewById(R.id.homeButton);
         search = findViewById(R.id.searchButton);
         notifications = findViewById(R.id.notificationsButton);
         dm = findViewById(R.id.dmButton);
         timeLine = findViewById(R.id.timeline);
 
+        // retornar um toast quando clicado na opção de menu Home
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, getString(R.string.local), Toast.LENGTH_LONG).show();
             }
         });
+        
+        // retornar um toast quando clicado na opção de menu Search
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, getString(R.string.search), Toast.LENGTH_LONG).show();
             }
         });
-
+        
+        // retornar um toast quando clicado na opção de menu Notifications
         notifications.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, getString(R.string.notifications), Toast.LENGTH_LONG).show();
             }
         });
-
+        
+        // retornar um toast quando clicado na opção de menu DM
         dm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // retornar um toast quando clicado na opção da toolbar Timeline
         timeLine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /* inicializa a lista de comentários com: nome, nome de usuário, tempo da publicação, mensagem, número de curtidas
+    e retweets */
     public List<Comments> initComments() {
         return new ArrayList<>(Arrays.asList(new Comments(R.drawable.model1, "Ana Clara", "@anac", "1h",
                         "Não vou sair de casa, está chovendo..", 12, 10),
