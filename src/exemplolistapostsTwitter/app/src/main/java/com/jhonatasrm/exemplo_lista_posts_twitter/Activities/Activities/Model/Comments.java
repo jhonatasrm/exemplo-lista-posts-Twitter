@@ -10,6 +10,7 @@ public class Comments {
     int likes;
     int retweets;
 
+    // método construtor da classe
     public Comments(int profileImage, String name, String username, String hour, String textComment,
                     int likes, int retweets) {
         this.profileImage = profileImage;
