@@ -23,16 +23,19 @@ public class CommetsAdapter extends BaseAdapter {
     private CircleImageView profileImage;
     private ImageButton arrow, liked, retweeted, commented, share;
 
+    // método inicialização da classe
     public CommetsAdapter(List<Comments> comments, Activity activity) {
         this.comments = comments;
         this.activity = activity;
     }
 
+    // define o tamanho da lista
     @Override
     public int getCount() {
         return comments.size();
     }
 
+    // pega a posição do item
     @Override
     public Object getItem(int position) {
         return comments.get(position);
@@ -49,6 +52,7 @@ public class CommetsAdapter extends BaseAdapter {
 
         final Comments comment = comments.get(position);
 
+        // inicialização dos findViewById
         name = view.findViewById(R.id.name);
         username = view.findViewById(R.id.username);
         hour = view.findViewById(R.id.hour);
@@ -62,6 +66,7 @@ public class CommetsAdapter extends BaseAdapter {
         commented = view.findViewById(R.id.commented);
         share = view.findViewById(R.id.share);
 
+        // modificando o texto e imagem conforme recupera da lista
         name.setText(comment.getName());
         username.setText(comment.getUsername());
         hour.setText(comment.getHour());
@@ -70,13 +75,15 @@ public class CommetsAdapter extends BaseAdapter {
         textComment.setText(comment.getTextComment());
         profileImage.setImageResource(comment.getProfileImage());
 
+        // evento onclick chamado quando clicado no ImageButton liked
         liked.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(v.getContext(), "Likes: " + comment.getLikes(), Toast.LENGTH_SHORT).show();
             }
         });
-
+        
+        // evento onclick chamado quando clicado no ImageButton retweeted
         retweeted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,6 +91,7 @@ public class CommetsAdapter extends BaseAdapter {
             }
         });
 
+        // evento onclick chamado quando clicado no ImageButton commented
         commented.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,13 +99,15 @@ public class CommetsAdapter extends BaseAdapter {
             }
         });
 
+        // evento onclick chamado quando clicado no ImageButton arrow
         arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(v.getContext(), R.string.more_options, Toast.LENGTH_SHORT).show();
             }
         });
-
+                
+        // evento onclick chamado quando clicado no ImageButton share
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -105,6 +115,7 @@ public class CommetsAdapter extends BaseAdapter {
             }
         });
 
+        // retorna a view
         return view;
     }
 }
